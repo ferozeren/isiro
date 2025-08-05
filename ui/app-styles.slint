@@ -1,0 +1,30 @@
+export global AppStyles {
+    in-out property <length> padding: 10px;
+    in-out property <length> margin: 10px;
+}
+
+export component Button {
+    in-out property <string> text;
+    callback clicked();
+    Rectangle {
+        background: ta.pressed ? #cbdc9e : ta.has-hover ? #92cbe5 : #6e9aae;     
+
+
+        // background: ta.pressed ? gray : ta.has-hover ? gray.darker(10%) : gray.darker(50%);
+        animate background { duration: 10ms; }
+        border-radius: 10px;
+        border-width: 2px;
+        border-color: self.background.darker(20%);
+        ta := TouchArea {
+            clicked => {
+                root.clicked();
+            }
+        }
+    }
+
+    Text {
+        text: root.text;
+        color: black;
+        font-size: 20px;
+    }
+}
