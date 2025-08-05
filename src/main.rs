@@ -87,7 +87,6 @@ fn operations(expr: &str) -> Vec<Operators> {
     operators
 }
 
-
 /// Converts unary minus signs in the operator vector to negative numbers.
 ///
 /// For example, `[-, Number(5.0)]` becomes `[Number(-5.0)]`.
@@ -189,7 +188,6 @@ fn evaluate_expression(operators: Vec<Operators>) -> f64 {
         panic!("Failed to evaluate expression");
     }
 }
-
 
 /// Main function boby for GUI Window
 fn main() -> Result<(), Box<dyn Error>> {
@@ -354,7 +352,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         let ui: AppWindow = ui.as_weak().unwrap();
 
         move || {
-                ui.set_screen(SharedString::new());
+            ui.set_screen(SharedString::new());
         }
     });
 
@@ -381,7 +379,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                 // println!("{:?}", &enum_parsed);
                 let result: f64 = evaluate_expression(enum_parsed);
                 ui.set_answer(result.to_shared_string());
-                ui.set_screen(result.to_shared_string());
+                // ui.set_screen(result.to_shared_string());
             }
         }
     });
