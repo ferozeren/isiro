@@ -1,13 +1,16 @@
 
 import { VerticalBox, HorizontalBox } from "std-widgets.slint";
 import { Button } from "app-styles.slint";
-import { AppStyles } from "app-styles.slint";
+import { AppStyles, ButtonOp } from "app-styles.slint";
 
 export component AppWindow inherits Window {
     title: "Isiro";
-    width: 400px;
-    height: 500px;
-
+    // width: 400px;
+    // height: 600px;
+    min-height: 600px;
+    min-width: 400px;
+    preferred-width: 400px;
+    preferred-height: 600px;
     in-out property <string> screen;
     in-out property <string> answer;
 
@@ -35,47 +38,60 @@ export component AppWindow inherits Window {
         GridLayout {
             spacing: AppStyles.margin;
             padding: AppStyles.padding;
-
             Row {
+                
                 Text {
+                height: 14%;
                     colspan: 4;
                     text: "\{screen}";
+                    // wrap: no-wrap;
                     wrap: char-wrap;
-                    font-size: 20px;
+                    font-size: 30px;
                     horizontal-alignment: right;
-                    padding-bottom: 100px;
+                    letter-spacing: 2px;
+                    overflow: clip;
+                }
+            }
+
+            Row {
+                Rectangle {
+                    colspan: 4;
+                    height: 1px;
+                    background: gray;
                 }
             }
 
             Row {
                 Text {
                     colspan: 4;
+                    height: 14%;
                     text: "\{answer}";
-                    wrap: char-wrap;
-                    font-size: 20px;
+                    // wrap: char-wrap;
+                    font-size: 30px;
                     horizontal-alignment: right;
-                    padding-bottom: 100px;
+                    overflow: elide;
+                    wrap: char-wrap;
                 }
             }
 
             Row {
-                btn_mod := Button {
+
+                btn_mod := ButtonOp {
                     text: "%";
                 }
-
-                btn_div := Button {
+ 
+                btn_div := ButtonOp {
                     text: "/";
                 }
 
-                btn_mul := Button {
+                btn_mul := ButtonOp {
                     text: "x";
                 }
-
-                btn_minus := Button {
-                    text: {
-                        "-";
-                    }
+                btn_cc := ButtonOp {
+                    text: "C";
                 }
+
+
             }
 
             Row {
@@ -97,10 +113,9 @@ export component AppWindow inherits Window {
                     }
                 }
 
-                btn_plus := Button {
-                    rowspan: 2;
+                btn_minus := ButtonOp {
                     text: {
-                        "+";
+                        "-";
                     }
                 }
             }
@@ -121,6 +136,13 @@ export component AppWindow inherits Window {
                 btn_6 := Button {
                     text: {
                         6
+                    }
+                }
+
+                btn_plus := ButtonOp {
+                    // rowspan: 2;
+                    text: {
+                        "+";
                     }
                 }
             }
@@ -144,7 +166,7 @@ export component AppWindow inherits Window {
                     }
                 }
 
-                btn_equal := Button {
+                btn_equal := ButtonOp {
                     rowspan: 2;
                     text: {
                         "=";
@@ -154,16 +176,15 @@ export component AppWindow inherits Window {
 
             Row {
                 btn_0 := Button {
+                    colspan: 2;
                     text: "0";
                 }
 
                 btn_dot := Button {
                     text: ".";
+                    col: 2;
                 }
 
-                btn_cc := Button {
-                    text: "CC";
-                }
             }
         }
     }
