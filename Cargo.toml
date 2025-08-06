@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-slint = "1.12.1"
+slint = { version = "1.12.1", features = ["backend-android-activity-06"] }
 
 [build-dependencies]
 slint-build = "1.12.1"
@@ -20,5 +20,15 @@ incremental = false
 
 [profile.dev]
 incremental = true
+
+[lib]
+crate-type = ["cdylib"] # required for android
+
+[package.metadata.android.signing.release]
+path = ""              # add path to your release key
+keystore_password = "" # add_release_key password
+key_alias = "isiro"
+key_password = ""      # add_release_key password
+
 
 [dev-dependencies]
