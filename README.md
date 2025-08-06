@@ -22,13 +22,17 @@ cargo install --path .
 
 | Dark Theme                                                                                                                                 | Light Theme                                                                                                                                      |
 | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img width="457" height="683" alt="Breeze_Native" src="https://github.com/user-attachments/assets/3550d841-649a-466c-9ca9-753c3aa33454" /> | <img width="446" height="681" alt="Breeze_Native_Light" src="https://github.com/user-attachments/assets/7d1fcc96-384f-4afc-a345-98df6c411609" /> |
+| <img width="457" height="683" alt="Breeze_Native" src="https://github.com/user-attachments/assets/3550d841-649a-466c-9ca9-753c3aa33454" /> | <img width="455" height="680" alt="Breeze_Native_Light" src="https://github.com/user-attachments/assets/2226aec1-2c61-459f-b75f-f6869bcf3dad" /> |
+
 
 ## isiro in Fluent Style (Windows 11)
 
 | Dark Theme                                                                                                                                  | Light Theme                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img width="431" height="669" alt="Windows_Native" src="https://github.com/user-attachments/assets/978d1f37-94b1-431b-93fc-ffbc972c8d60" /> | <img width="435" height="669" alt="Windows_Native_Light" src="https://github.com/user-attachments/assets/9efaebe7-a721-46d2-8975-60f91b0edfc4" /> |
+| <img width="432" height="669" alt="Windows_Native" src="https://github.com/user-attachments/assets/1bf98322-00e5-42dc-b238-72aa438ffe35" /> | <img width="438" height="673" alt="Windows_Native_Light" src="https://github.com/user-attachments/assets/4857db74-b9ca-41b9-861d-0fb25ea61272" /> |
+
+
+
 
 ## Build and Run on Android
 
