@@ -33,7 +33,7 @@ cargo install --path .
 
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GNU GPL 3.0](LICENSE).
 
 ## Acknowledgments
 - [Slint UI](https://slint.dev/): For providing the framework to build the user interface.
