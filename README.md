@@ -19,7 +19,9 @@ cargo install --path .
 
 | Dark Theme | Light Theme |
 |------------|-------------|
-| <img width="230" alt="Breeze Dark Theme" src="https://github.com/user-attachments/assets/a55a2b07-4251-4925-b513-bbe145aa4ff0" /> | <img width="230" alt="Breeze Light Theme" src="https://github.com/user-attachments/assets/e2133a13-7070-4bd1-a158-c61a1946d804" /> |
+| <img width="439" height="674" alt="Breeze_Native" src="https://github.com/user-attachments/assets/a8fff5c0-1f36-4f2c-8c77-1e66243a2c52" /> | <img width="446" height="681" alt="Breeze_Native_Light" src="https://github.com/user-attachments/assets/7d1fcc96-384f-4afc-a345-98df6c411609" /> |
+
+
 
 
 
@@ -28,7 +30,9 @@ cargo install --path .
 
 | Dark Theme | Light Theme |
 |------------|-------------|
-| <img width="477" height="617" alt="Windows_Native" src="https://github.com/user-attachments/assets/9317d7dc-2c55-46af-96ca-2b751a8e8dc7" /> | <img width="508" height="633" alt="Windows_Native_Light" src="https://github.com/user-attachments/assets/22eef946-164b-4f4e-9f5a-941b593c64b4" /> |
+| <img width="431" height="669" alt="Windows_Native" src="https://github.com/user-attachments/assets/978d1f37-94b1-431b-93fc-ffbc972c8d60" /> | <img width="435" height="669" alt="Windows_Native_Light" src="https://github.com/user-attachments/assets/9efaebe7-a721-46d2-8975-60f91b0edfc4" />|
+
+
 
 
 
