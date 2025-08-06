@@ -22,7 +22,7 @@ cargo install --path .
 
 | Dark Theme                                                                                                                                 | Light Theme                                                                                                                                      |
 | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img width="439" height="674" alt="Breeze_Native" src="https://github.com/user-attachments/assets/a8fff5c0-1f36-4f2c-8c77-1e66243a2c52" /> | <img width="446" height="681" alt="Breeze_Native_Light" src="https://github.com/user-attachments/assets/7d1fcc96-384f-4afc-a345-98df6c411609" /> |
+| <img width="457" height="683" alt="Breeze_Native" src="https://github.com/user-attachments/assets/3550d841-649a-466c-9ca9-753c3aa33454" /> | <img width="446" height="681" alt="Breeze_Native_Light" src="https://github.com/user-attachments/assets/7d1fcc96-384f-4afc-a345-98df6c411609" /> |
 
 ## isiro in Fluent Style (Windows 11)
 
@@ -33,6 +33,7 @@ cargo install --path .
 ## Build and Run on Android
 
 To build and deploy `isiro` for Android, ensure you have the Android SDK, NDK (version 29.0.13846066 recommended), and platform 30 installed. The application uses the `backend-android-activity-06` feature of the Slint crate.
+
 
 ### Prerequisites
 
